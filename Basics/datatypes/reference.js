@@ -1,5 +1,6 @@
-//Referemce (Non primitive)
+//Reference (Non primitive)
 // Array , Objects , Functions
+// reference type are stored in heap memory
 
 const heros = [ "ironman","thor","flash"]; //array type is object
 

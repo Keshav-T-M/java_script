@@ -1,7 +1,7 @@
 // primitive types
 // these are call by value (original data reference will be shared means copy of a original data)
 // 7 types  : Strings , Number , Boolean , null , undefined , Symbol , BigInt
-
+//primitive types ared store in stack memory
 
 const score = 100 //Number
 const scoreValue = 100.3//Number
