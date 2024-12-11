@@ -1,4 +1,4 @@
-//parseInt
+//<parseInt>
 const myString = "42";
 const myString1 = "32.5"
 const myString2 = "055"
@@ -14,6 +14,8 @@ console.log("myString1:",myNumber1)
 console.log("myString3:",myNumber3)
 console.log("myString4:",myNumber4)
 console.log("myString5:",myNumber5)
+//</parseInt>
+
 
 //<some extra examples on parseInt>
 console.log(parseInt("&123"));//NaN(not a number)
@@ -47,8 +49,16 @@ else{
 }
 //</some extra examples on parseInt>
 
-//parseFloat
+
+//<parseFloat>
 const mystr = '3.14';
 const myNumb1 = parseFloat(mystr);
 console.log("mystr:",myNumb1)
+//</parseFloat>
+
+
+//<concatenation>
+const str = "Hello" + "World";
+console.log(str);
+//</concatenation>
 
