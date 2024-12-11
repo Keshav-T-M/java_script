@@ -22,13 +22,22 @@ console.log(parseInt("xyz"));//NaN
 //note : input can't be converted to an integer
 
 console.log(parseInt("0x123"));// 291
+//prefix "0x" indicates that the number is in hexadecimal (base 16).
+//"123" in hexadecimal is 1*16^2 + 2*16^1 + 3*16^0 which equals 256 + 32 + 3 = 291
+
 console.log(parseInt("0b101"));// 0
+//The parseInt function does not recognize the "0b" prefix as an indicator of a binary (base 2) number.
+//Since the parseInt function expects decimal by default and doesn't recognize "0b", it returns 0.
+
 console.log(parseInt("0o123"));// 0
+//The parseInt function does not recognize the "0o" prefix as an indicator of an octal (base 8) number.
+//Similar to the binary case, since parseInt doesn't recognize "0o", it returns 0.
 
 console.log(parseInt("xyz"));
 console.log(parseInt("@#$"));
 //both xyz and @#$ are not numbers so we got NaN Output but the NaN are not same because it came from  different origns in our case one NaN is from xyz and other NaN is from @#$
 //that is the reason why the below condition gives us a flase output
+
 console.log(NaN == NaN);//false
 if (5 == 5){
     console.log("both are equal")
