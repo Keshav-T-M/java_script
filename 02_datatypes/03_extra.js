@@ -62,3 +62,29 @@ const str = "Hello" + "World";
 console.log(str);
 //</concatenation>
 
+
+//<Type Coercion>
+//node : Type coercion can lead to unexpected results in JavaScript
+//implicit type conversion
+let sum = "keshav" - 5;
+let sum1 = "5" - 5;
+let sum2 = "5" + 10;
+console.log(sum);//NaN             
+console.log(sum1);//0
+console.log(sum2);//510
+
+console.log(10 + "20");
+console.log(9 - "5");
+console.log("Java" + "Script");
+console.log(" " + " ");
+console.log(" " + 0);
+console.log("keshav" - "Shetty");
+//true = 1
+//false = 0
+console.log(true + true);
+console.log(true + false);
+console.log(false + true);
+console.log(false + false);
+console.log(false - true);
+
+//</Type Coercion>
