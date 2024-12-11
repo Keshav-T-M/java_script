@@ -15,6 +15,28 @@ console.log("myString3:",myNumber3)
 console.log("myString4:",myNumber4)
 console.log("myString5:",myNumber5)
 
+//<some extra examples on parseInt>
+console.log(parseInt("&123"));//NaN(not a number)
+console.log(parseInt("-123"));// -123
+console.log(parseInt("xyz"));//NaN
+//note : input can't be converted to an integer
+
+console.log(parseInt("0x123"));// 291
+console.log(parseInt("0b101"));// 0
+console.log(parseInt("0o123"));// 0
+
+console.log(parseInt("xyz"));
+console.log(parseInt("@#$"));
+//both xyz and @#$ are not numbers so we got NaN Output but the NaN are not same because it came from  different origns in our case one NaN is from xyz and other NaN is from @#$
+//that is the reason why the below condition gives us a flase output
+console.log(NaN == NaN);//false
+if (5 == 5){
+    console.log("both are equal")
+}
+else{
+    console.log("not equal")
+}
+//</some extra examples on parseInt>
 
 //parseFloat
 const mystr = '3.14';
